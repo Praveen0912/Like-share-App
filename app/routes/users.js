@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const customerApi = require('../controllers/customerApi');
 const jwt = require('jsonwebtoken');
 
 function verifyToken(req, res, next){
