@@ -1,0 +1,19 @@
+<nav class="use navbar navbar-toggleable-md navbar-light rounded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" routerLink="/" class="logo-brand">
+      <h3>LikeShare</h3>
+     </a>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+  
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item" [hidden]="!loggedIn">
+              <button class="btn btn-danger" (click)="signOut()">signout</button>
+          </li>   
+      </ul>
+   
+    </div>
+  </nav>
+  <br><br><br>
